@@ -1,24 +1,8 @@
 package interfacesegregation;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class LoanPayment implements Payment {
-
-    @Override
-    public void initiatePayments() {
-        throw new UnsupportedOperationException("This is not a bank payment");
-    }
-
-    @Override
-    public Object status() {
-        return new Object();
-    }
-
-    @Override
-    public List<Object> getPayments() {
-        return new ArrayList<>();
-    }
+public class LoanPayment implements Loan {
 
     @Override
     public void initiateLoanSettlement() {
@@ -28,5 +12,15 @@ public class LoanPayment implements Payment {
     @Override
     public void initiateRePayment() {
 
+    }
+
+    @Override
+    public Object status() {
+        return null;
+    }
+
+    @Override
+    public List<Object> getPayments() {
+        return null;
     }
 }

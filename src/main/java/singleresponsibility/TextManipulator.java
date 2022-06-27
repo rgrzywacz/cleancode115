@@ -1,12 +1,14 @@
 package singleresponsibility;
 
-import java.util.Arrays;
-
 public class TextManipulator {
     private String text;
 
     public TextManipulator(String text) {
         this.text = text;
+    }
+
+    public String getText() {
+        return text;
     }
 
     public void appendText(String newText) {
@@ -27,15 +29,4 @@ public class TextManipulator {
         return text;
     }
 
-    public void printText() {
-        System.out.println(this.text);
-    }
-
-    public void printOutEachWordOfText() {
-        System.out.println(Arrays.toString(this.text.split(" ")));
-    }
-
-    public void printRangeOfCharacters(int startingIndex, int endIndex) {
-        System.out.println(this.text.substring(startingIndex, endIndex));
-    }
 }

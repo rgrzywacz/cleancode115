@@ -1,4 +1,5 @@
 package openclose;
 
-public class CurrentAccount {
+public class CurrentAccount extends Account {
+
 }

@@ -1,4 +1,6 @@
 package liskov;
 
-public class FixedTermDepositAccount {
+import openclose.Account;
+
+public class FixedTermDepositAccount extends Account {
 }
